@@ -1,28 +1,592 @@
 *,
 *::after,
-*::before{
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 html,
-body{
+body {
     height: 100%;
     min-height: 100%;
 }
-body{
+a {
+    text-decoration: none;
+    color: #fff;
+}
+body {
     background-color: black;
     color: aliceblue;
     display: flex;
     flex-direction: column;
 }
+ul {
+    text-decoration: none;
+}
+li {
+    text-decoration: none;
+}
 main {
     flex-grow: 1;
-
 }
-.container{
-    max-width: 1300px;
+.container {
     margin: 0 auto;
     position: relative;
 
+}
+
+/*Хэддер*/
+
+.button-link {
+    text-decoration: none;
+    color: #fff;
+}
+.container-header {
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-header {
+    display: flex;
+}
+.nav-time {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.75;
+    margin-left: 30px;
+}
+.nav-it {
+    text-decoration: none;
+    margin-left: 15px;
+}
+.logo-gym {
+    color: #fff;
+}
+.headermenu {
+    background-color: rgb(19, 19, 19);
+    width: 100%;
+    height: 90px;
+    align-content: center;
+}
+li.nav-it::marker {
+    font-size: 0;
+}
+.container-logo {
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #a92a1d;
+}
+.logo-gym {
+    color: #fff;
+}
+.button-traning {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.button-studio {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.button-lifestyle {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.button-contact {
+    width: 111px;
+    height: 50px;
+    background: #a92a1d;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.container-logo-time {
+    display: flex;
+    align-items: center;
+}
+
+
+/*Основная часть сайта*/
+
+.block_h1 {
+  position: relative;
+  width: 460px;
+  height: 303px;
+  margin-left: 400px;
+  padding-top: 300px;
+}
+
+.h1_builders {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 0px;
+  margin-bottom: 34px;
+}
+
+.h1_builders > span {
+  color: #a92a1d;
+}
+
+.block_img_colomт {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 50px;
+  top: 500px;
+}
+
+.img_Facebook {
+  cursor: pointer;
+  width: 11px;
+  height: 21px;
+  margin-bottom: 48px;
+}
+
+.img_icon {
+  cursor: pointer;
+  width: 26px;
+  height: 21px;
+  margin-bottom: 48px;
+}
+
+.img_instogra {
+  cursor: pointer;
+  width: 26px;
+  height: 21px;
+}
+
+.Get_Started {
+    border: none;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    letter-spacing: -0.05em;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    background: #a92a1d;
+}
+
+.container-banner {
+    background-image: url(https://figaro45.github.io/RGym/img/Main_men.webp);
+    height: 950px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-contact {
+    display: grid;
+    justify-items: center;
+    padding-top: 350px;
+}
+.container-picture-contact {
+    background-image: url(https://figaro45.github.io/RGym/img/%D1%84%D0%BE%D0%BD_%D0%BD%D0%B8%D0%B7.webp);
+    width: 100%;
+    height: 1050px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-head {
+    width: 100%;
+    line-height: 100%;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-p {
+    width: 100%;
+    margin-bottom: 38px;
+    margin-top: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    letter-spacing: -0.05em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.button-email {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    letter-spacing: -0.05em;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 375px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 16px;
+    outline: none;
+    text-align: center;
+}
+
+.button-submit {
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #fff;
+    width: 402px;
+    height: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144%;
+    letter-spacing: -0.05em;
+    color: #000;
+}
+
+
+/*Popular Exercise*/
+
+
+.container_section {
+  display: flex;
+  width: 1300px;
+  margin: 0px auto;
+  height: 486px;
+  justify-content: center;
+}
+
+.section {
+  width: 100%;
+  height: 1276px;
+}
+
+.block_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 165px;
+  width: 790px;
+  height: 213px;
+}
+
+.block_section > h3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 29px;
+  height: 59px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.block_section > p {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 51px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 144%;
+  letter-spacing: -0.05em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.img_line_orange {
+  width: 163px;
+  height: 24px;
+}
+
+.swiper {
+  width: 100%;
+  height: 671px;
+  top: 50px;
+}
+
+.img_Slaid {
+  cursor: pointer;
+  width: 320px;
+  height: 601px;
+  filter: grayscale(100%);
+}
+
+.img_Slaid:hover {
+  filter: grayscale(0%);
+}
+
+.img_Slaid2 {
+  cursor: pointer;
+  position: relative;
+  top: 70px;
+  width: 320px;
+  height: 601px;
+  filter: grayscale(100%);
+}
+
+.img_Slaid2:hover {
+  filter: grayscale(0%);
+}
+
+.block_img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.h3_ultimate {
+  margin-top: 0px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+
+
+
+/*Footer*/
+
+.container_footer {
+  display: flex;
+  width: 1300px;
+  margin: 0px auto;
+  height: 850px;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 562px;
+}
+
+.footer_block_one {
+  width: 379px;
+  height: 167px;
+}
+
+.footer_block_one > h4 {
+  cursor: pointer;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #e74c3c;
+}
+
+.footer_block_one > h4 > span {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer_block_one > p {
+  width: 100%;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: -0.05em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.block_info {
+  margin-top: 71px;
+  width: 182px;
+  height: 234px;
+}
+
+.block_info > h4 {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 45px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.ul_footer {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.Ul_li {
+  width: 100%;
+  margin-bottom: 21px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.block_follower {
+  width: 160px;
+  height: 127px;
+  margin-bottom: 41px;
+}
+
+.block_follower > h4 {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125%;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.img_f_T_I {
+  cursor: pointer;
+  width: 43px;
+  margin-right: 5px;
+
+}
+
+.RGym_h5 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  text-transform: capitalize;
+  color: #fff;
+  padding-bottom: 100px;
+  margin-top: 100px;
+}
+
+.span_R {
+  color: #e74c3c;
+}
+
+.block_copy {
+  display: none;
+}
+
+.block_flex {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 70px;
+}
+
+.black_width_two {
+  z-index: 15;
+  display: none;
+  width: 100%;
+  height: 90px;
+  background: rgba(0, 0, 0, 0.7529411765);
+  position: relative;
+}
+
+.menu_burger {
+  display: block;
+}
+
+.menu_mar_left {
+  display: block;
+}
+
+.menu_mar_left {
+  margin-right: 25px;
+}
+
+.block_none {
+  display: none;
+}
+
+._display_none {
+  display: none;
+}
+
+.danger {
+  border: 1px solid red;
+}
+
+.sending_form {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7137254902);
+}
+
+.block_sending {
+  display: flex;
+  justify-content: center;
+  border-radius: 21px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 300px;
+  background-color: #fff;
+  align-items: center;
+}
+
+.block_sending > h2 {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+
+.close_img {
+  position: absolute;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  right: 21px;
+  top: 21px;
 }
