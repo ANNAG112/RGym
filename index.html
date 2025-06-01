@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,34 +10,123 @@
 <body>
     <header>
         <section class="headermenu">
-            <div class="container">
-                1
-            </div>
-        </section>
-        <section class="banner">
-            <div class="container-banner">
-                2
+            <div class="container-header">
+                <div class="container-logo-time">
+                    <div class="container-logo">
+                    R<span class="logo-gym">Gym</span>
+                    </div>
+                    <ul class="nav-time">
+                        <img src="img/Vector.png" alt="time" class="img-clock">
+                        <li class="nav-it"> Mon - Fri : 8:00 am - 7:00 pm </li>
+                    </ul>
+                </div>
+                <nav class="nav-header">
+                    <ul class="nav-links">
+                        <a class="button-link" href="#banner">
+                            <button class="button-traning"> Traning</button>
+                        </a>
+                        <a class="button-link" href="#popular">
+                            <button class="button-studio">Studio Classes</button>
+                        </a>
+                        <a class="button-link" href="#training">
+                            <button class="button-lifestyle">Lifestyle</button>
+                        </a>
+                        <a class="button-link" href="#contacts">
+                            <button class="button-contact">Contact</button>
+                        </a>
+                    </ul>
+                </nav>
             </div>
         </section>
     </header>
     <main>
-        <section class="popular">
+        <section id="banner" class="banner">
+            <div class="container-banner">
+                <div class="block_h1">
+                    <h1 class="h1_builders">Making<br>Different from<br>other builders<span>.</span></h1>
+                    <button class="Get_Started scrolling_page" data-goto=".section_footer">начать</button>
+                </div>
+                <div class="block_img_colomт">
+                    <img src="img/фейсб.png" alt="Facebook" loading="eager" class="img_Facebook">
+                    <img src="img/твит.png" alt="Twitter " loading="eager" class="img_icon">
+                    <img src="img/инста.png" alt="instogra" loading="eager" class="img_instogra">
+                </div>
+            </div>
+        </section>
+        <section id="popular" class="popular">
             <div class="container-popular">
-                3
+                <section class="section" id="section_Slaid">
+        <div class="container_section">
+            <div class="block_section">
+                <h3>Popular Exercise</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui neque sa gittis magna erat sagittis morbi. Id libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="img/Слайд1линия_оранжевая.webp.png" alt="линия" class="img_line_orange" loading="lazy">
+            </div>
+        </div>
+        <!-- Слайд -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="block_img">
+                        <img src="img/фото1.png" alt="1" loading="lazy" class="img_Slaid">
+                        <img src="img/фото2.png" alt="2" loading="lazy" class="img_Slaid2">
+                        <img src="img/фото3.png" alt="3" loading="lazy" class="img_Slaid">
+                        <img src="img/фото4.png" alt="4" loading="lazy" class="img_Slaid2">
+                        <img src="img/фото5.png" alt="5" loading="lazy" class="img_Slaid">
+                    </div>
+                </div>
+            </div>
+        </div>
             </div>
         </section>
-        <section class="personal-traning">
-            <div class="container-traning">
-                4
+          <section class="contacts">
+            <div id="contacts" class="container-picture-contact">
+                <div class="container-contact">
+                    <h1 class="contact-head">Subscribe to our newsletter</h1>
+                    <p class="contact-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui neque.</p>
+                    <input type="email" placeholder="Enter Email" class="button-email">
+                    <input type="submit" value="Submit" class="button-submit">
+                </div>
             </div>
         </section>
+       
     </main>
-    <footer>
-        <section class="footer-menu">
-            <div class="container-footer">
-                5
+    <footer class="footer" id="#footer">
+        <div class="footer_block_one">
+            <h4 class="scrolling_page" data-goto="#header">R<span class="scrolling_page" data-goto="#header">Gym</span>
+            </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam .</p>
+        </div>
+        <div class="block_info">
+            <h4>Information</h4>
+            <ul class="ul_footer">
+                <li class="Ul_li scrolling_page" data-goto="#header">About us</li>
+                <li class="Ul_li">Lifstyle</li>
+                <li class="Ul_li">Fitness</li>
+                <li class="Ul_li">Pricing</li>
+            </ul>
+        </div>
+        <div class="block_info">
+            <h4>More Links</h4>
+            <ul class="ul_footer">
+                <li class="Ul_li">Gallery</li>
+                <li class="Ul_li">ClubLocation</li>
+                <li class="Ul_li">Behind the scence</li>
+                <li class="Ul_li scrolling_page" data-goto="#footer">Contact</li>
+            </ul>
+        </div>
+        <div class="block_follower">
+            <h4>Follow Us On!</h4>
+            <div class="block_F_T_I">
+                <img src="https://figaro45.github.io/RGym/img/footer/%D1%84%D0%B5%D0%B8%D1%81%D0%B1%D1%83%D0%BA.webp" alt="феисбук" loading="lazy" class="img_f_T_I">
+                <img src="https://figaro45.github.io/RGym/img/footer/%D1%82%D0%B2%D0%B8%D1%82%D0%B5%D1%80.webp" alt="твитер" loading="lazy" class="img_f_T_I">
+                <img src="https://figaro45.github.io/RGym/img/footer/%D0%B8%D0%BD%D1%81%D1%82%D0%B3%D1%80%D0%B0%D0%BC.webp" alt="инстограм" loading="lazy" class="img_f_T_I">
             </div>
-        </section>
+        </div>
     </footer>
+    <h5 class="RGym_h5">Copyright © 2021 <span class="span_R">R</span>Gym.
+        All Rights Reserved</h5>
 </body>
 </html>
